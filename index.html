@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mood Enhancer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Mood Enhancer</h1>
+    <p>How are you feeling right now?</p>
+
+    <div class="camera-box">
+      <video id="video" width="280" height="210" autoplay muted playsinline></video>
+      <canvas id="overlay" width="280" height="210"></canvas>
+    </div>
+    <button id="detectBtn">📷 Detect My Mood</button>
+    <p id="status" class="status"></p>
+
+    <p class="or">— or choose manually —</p>
+
+    <div class="moods">
+      <button class="mood-btn" data-mood="happy">😊 Happy</button>
+      <button class="mood-btn" data-mood="sad">😢 Sad</button>
+      <button class="mood-btn" data-mood="stressed">😩 Stressed</button>
+      <button class="mood-btn" data-mood="bored">🥱 Bored</button>
+      <button class="mood-btn" data-mood="angry">😠 Angry</button>
+    </div>
+
+    <button id="surpriseBtn" class="surprise-btn">🎲 Surprise Me</button>
+
+    <div id="result" class="result hidden">
+      <div id="moodEmoji" class="mood-emoji"></div>
+      <h2 id="resultTitle"></h2>
+      <p id="affirmation" class="affirmation"></p>
+      <p id="quote"></p>
+      <p id="activity"></p>
+      <p id="song"></p>
+      <p id="movie"></p>
+      <button id="againBtn">Try Another</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
