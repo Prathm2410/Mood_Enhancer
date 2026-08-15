@@ -28,8 +28,5 @@ python mood_logic.py
 ```
 Then type a mood: `happy`, `sad`, `stressed`, `bored`, or `angry`
 
-## Live Demo
-[Add your GitHub Pages link here once enabled]
-
 ## Author
 Rathod Pratham
